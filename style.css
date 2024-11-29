@@ -1,0 +1,147 @@
+/* Global Styles */
+body {
+  font-family: 'Poppins', Arial, sans-serif;
+  background-color: #121212;
+  color: #e0e0e0;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1, h2 {
+  color: #ffffff;
+  font-weight: 600;
+  text-align: center;
+}
+
+#product-list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+/* Product Card Styles */
+.product {
+  background: #1e1e1e;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  max-width: 300px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.7);
+}
+
+.product img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.product h3 {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.product p {
+  font-size: 18px;
+  color: #64ffda;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.product button {
+  background: linear-gradient(135deg, #64ffda, #00bcd4);
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.product button:hover {
+  background: linear-gradient(135deg, #00bcd4, #64ffda);
+}
+
+/* Cart Styles */
+.cart {
+  margin-top: 40px;
+  padding: 20px;
+  background: #1e1e1e;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  max-width: 500px;
+}
+
+.cart ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.cart li {
+  padding: 15px 0;
+  border-bottom: 1px solid #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cart li:last-child {
+  border-bottom: none;
+}
+
+.cart li button {
+  background: #f44336;
+  color: #ffffff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s ease;
+}
+
+.cart li button:hover {
+  background: #d32f2f;
+}
+
+#cart-total {
+  font-size: 22px;
+  font-weight: 700;
+  text-align: right;
+  margin-top: 20px;
+  color: #64ffda;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #product-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product {
+    width: 90%;
+  }
+
+  .cart {
+    width: 90%;
+  }
+}
+
+
+
